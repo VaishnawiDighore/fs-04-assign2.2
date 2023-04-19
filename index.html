@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      let div = React.createElement("div",{
+          id: "title1",
+          style: {
+            boxShadow: "0 0 20px black",
+            padding: "30px",
+            textAlign: "center",
+            margin: "auto",
+            width: "400px",
+            height:"400px",
+            backgroundImage: "linear-gradient(135deg, #9796f0 10%, #FBC7D4 100%)",
+            // backgroundColor:"#e0effd",
+          },
+        },[
+      
+      React.createElement(
+        "div",
+        {
+          id: "title",
+          style: {
+            boxShadow: "0 0 20px black",
+            padding: "20px",
+            textAlign: "center",
+            margin: "auto",
+            width: "250px",
+            height: "350px",
+            borderRadius: "5%",
+            backgroundColor:"white",           
+          },
+        },
+        [
+          React.createElement(
+            "div",null,
+            React.createElement("img", {
+              src: "https://th.bing.com/th/id/OIP.xs5O85RBOGm7Big9uBnGKAHaHZ?pid=ImgDet&rs=1",
+              alt: "example image",
+              width: "250px",
+              height: "200px",
+              style: { borderRadius: "5%"},
+            })
+        ),
+
+          React.createElement(
+            "div",
+            null,
+            React.createElement("h1", null, "Dima Blover")
+          ),
+          React.createElement(
+            "div",
+            null,
+            React.createElement(
+              "p",
+              {
+          id: "title",
+          style: {
+            opacity:"0.5",
+        }},
+              "UI/UX Designer"
+            )
+          ),
+
+          React.createElement(
+            "div",
+            null,
+
+            React.createElement(
+              "div",
+              {
+                style: {
+                  display: "flex",
+                  justifyContent: "space-evenly",
+                  textAlign: "center",
+                },
+              },
+              React.createElement(
+                "div",
+                null,
+                React.createElement(
+                  "span",
+                  {
+                    style: {
+                      fontWeight: "bold",
+                      fontSize: "larger",
+                    },
+                  },
+                  " 26 "
+                ),
+                React.createElement("br"),
+                React.createElement("span",{
+          id: "title",
+          style: {
+            opacity:"0.5",
+        }}, " Shoot ")
+              ),
+
+              React.createElement(
+                "div",
+                null,
+                React.createElement(
+                  "span",
+                  {
+                    style: {
+                      fontWeight: "bold",
+                      fontSize: "larger",
+                    },
+                  },
+                  "94 "
+                ),
+                React.createElement("br"),
+                React.createElement("span", {
+          id: "title",
+          style: {
+            opacity:"0.5",
+        }}, " Following ")
+              ),
+
+              React.createElement(
+                "div",
+                null,
+                React.createElement(
+                  "span",
+                  {
+                    style: {
+                      fontWeight: "bold",
+                      fontSize: "larger",
+                    },
+                  },
+                  " 139 "
+                ),
+                React.createElement("br"),
+                React.createElement("span", {
+          id: "title",
+          style: {
+            opacity:"0.5",
+        }}, " Followers ")
+              )
+            )
+          ),
+        ]
+      )
+      ])
+      
+      ReactDOM.render(div, document.getElementById("root"));
+    </script>
+  </body>
+</html>
